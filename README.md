@@ -440,8 +440,20 @@ comprehensive regexp for it, too.  this had the bonus of flagging nonsense lines
 
     $ ./apache-log-metrics.pl /var/tmp/sample-logs/nonsense.log
     ./apache-log-metrics.pl: looks like you provided an invalid log file; we couldn't process any lines
-    
 
-that's all, thanks :)
+### attempt to print out usage message
+
+    $ ./apache-log-metrics.pl --help
+
+    usage: ./apache-log-metrics.pl [-h|--help] file
+
+    required arguments:
+
+        file          path to apache access log file to parse
+ 
+    optional arguments:
+
+        -h, --help    show this help message and exit
+    
 
 
